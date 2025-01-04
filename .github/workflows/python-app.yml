@@ -7,8 +7,6 @@ on:
   schedule:
     - cron: "*/5 * * * *"
 
-permissions:
-  contents: read
 
 jobs:
   build:
@@ -27,4 +25,4 @@ jobs:
         pip install -r requirements.txt
     - name: execute python script
       run: |
-        python main.py
+        python3 ./main.py
