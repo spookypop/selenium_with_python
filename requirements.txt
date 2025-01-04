@@ -2,7 +2,7 @@ attrs==24.2.0
 by==0.0.4
 certifi==2024.8.30
 chardet==3.0.4
-charset-normalizer==3.4.1
+charset-normalizer==3.0.0
 exceptiongroup==1.2.2
 fuzzywuzzy==0.18.0
 html-reporter==0.2.6
