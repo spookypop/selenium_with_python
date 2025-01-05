@@ -10,7 +10,7 @@ class LoginTest(unittest.TestCase):
     def setUp(self) -> None:
         self.driver = chrom_driver_init()
         time.sleep(2)
-        self.driver.get("http://127.0.0.1:3000/login")
+        self.driver.get("http://47.113.226.85/login")
 
     def tearDown(self) -> None:
         self.driver.quit()
@@ -18,6 +18,7 @@ class LoginTest(unittest.TestCase):
     def test_error_password(self):
         """输入错误的密码，登录失败"""
         login_page = LoginPage(self.driver)
+        print("登录成功了")
         login_page.username_input_send_keys('miniredtest')
         login_page.password_input_send_keys('123444')
         login_page.login_button_click()
