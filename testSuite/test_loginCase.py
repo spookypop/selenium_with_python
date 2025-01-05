@@ -18,7 +18,6 @@ class LoginTest(unittest.TestCase):
     def test_error_password(self):
         """输入错误的密码，登录失败"""
         login_page = LoginPage(self.driver)
-        print("登录成功了")
         login_page.username_input_send_keys('miniredtest')
         login_page.password_input_send_keys('123444')
         login_page.login_button_click()
@@ -33,4 +32,4 @@ class LoginTest(unittest.TestCase):
         login_page.password_input_send_keys('123456miniredQ')
         login_page.login_button_click()
         time.sleep(2)
-        self.assertEqual(self.driver.current_url, 'http://127.0.0.1:3000/')
+        self.assertEqual(self.driver.current_url, 'http://47.113.226.85/')
