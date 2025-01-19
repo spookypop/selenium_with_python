@@ -8,7 +8,7 @@ class RegisterTest(unittest.TestCase):
     def setUp(self) -> None:
         self.driver = chrom_driver_init()
         time.sleep(2)
-        self.driver.get("http://127.0.0.1:3000/login")
+        self.driver.get("http://47.113.226.85/login")
 
     def test_password_boundary(self):
         login_page = LoginPage(self.driver)
